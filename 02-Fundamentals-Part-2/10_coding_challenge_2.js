@@ -27,6 +27,7 @@ const bills = [125,55,44]
 
 const tips = new Array();
 const totals = new Array();
+
 function calcTip(bill) {
     if(bill>=50 && bill<=300) {
         tips.push(bill*0.15);
