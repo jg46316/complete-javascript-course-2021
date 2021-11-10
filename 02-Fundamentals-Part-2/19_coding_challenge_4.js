@@ -30,32 +30,32 @@ const tips = [];
 const totals = [];
 
 function calcTip(bill) {
-    if(bill>=50 && bill<=300) {
-        tips.push(bill*0.15);
-        totals.push(bill*0.15+bill);
-    } else {
-        tips.push(bill*0.2)
-        totals.push(bill*0.2+bill)
-    }
+  if (bill >= 50 && bill <= 300) {
+    tips.push(bill * 0.15);
+    totals.push(bill * 0.15 + bill);
+  } else {
+    tips.push(bill * 0.2);
+    totals.push(bill * 0.2 + bill);
+  }
 }
 
-for( let i = 0; i < bills.length; i++) {
-     calcTip(bills[i]);
+for (let i = 0; i < bills.length; i++) {
+  calcTip(bills[i]);
 }
 
 console.log(bills, tips, totals);
 
 function calcAverage(arr) {
-    let sum = 0;
-    for(let i = 0; i < arr.length; i++){
-        sum = sum + arr[i];
-       var average = sum / arr.length;
-    }
-    return average;
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+    var average = sum / arr.length;
+  }
+  return average;
 }
 
 console.log(calcAverage(totals));
 
+const jas = 'dsdfd';
 
-
-
+const x = 23;
